@@ -2,11 +2,99 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>build-rockpaper</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Rock Paper Scissors</title>
   </head>
   <body>
+    <main class="app">
+      <header class="header">
+        <h1 class="header__logo">
+          <img src="/images/logo.svg" alt="Rock Paper Scissors" />
+        </h1>
+        <div class="score">
+          <span class="score__label">Score</span>
+          <span class="score__value" data-score>12</span>
+        </div>
+      </header>
+
+      <section class="game" data-screen="pick">
+        <div class="game__board">
+          <img class="game__bg" src="/images/bg-triangle.svg" alt="" aria-hidden="true" />
+
+          <button class="token token--paper token--pos-tl" type="button" data-choice="paper" aria-label="Paper">
+            <span class="token__inner">
+              <img src="/images/icon-paper.svg" alt="" aria-hidden="true" />
+            </span>
+          </button>
+
+          <button class="token token--scissors token--pos-tr" type="button" data-choice="scissors" aria-label="Scissors">
+            <span class="token__inner">
+              <img src="/images/icon-scissors.svg" alt="" aria-hidden="true" />
+            </span>
+          </button>
+
+          <button class="token token--rock token--pos-b" type="button" data-choice="rock" aria-label="Rock">
+            <span class="token__inner">
+              <img src="/images/icon-rock.svg" alt="" aria-hidden="true" />
+            </span>
+          </button>
+        </div>
+      </section>
+
+      <section class="result" data-screen="result" hidden>
+        <div class="result__slot result__slot--you">
+          <h2 class="result__label">You Picked</h2>
+          <div class="result__token-wrap">
+            <div class="token token--paper" data-slot="you">
+              <span class="token__inner">
+                <img src="/images/icon-paper.svg" alt="" aria-hidden="true" data-slot-icon />
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="result__verdict" data-verdict hidden>
+          <h2 class="result__title" data-verdict-text>You Win</h2>
+          <button class="btn-play-again" type="button" data-play-again>Play Again</button>
+        </div>
+
+        <div class="result__slot result__slot--house">
+          <h2 class="result__label">The House Picked</h2>
+          <div class="result__token-wrap">
+            <div class="token token--empty" data-slot="house">
+              <span class="token__inner">
+                <img src="/images/icon-rock.svg" alt="" aria-hidden="true" data-slot-icon hidden />
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <button class="btn-rules" type="button" data-open-rules>Rules</button>
+    </main>
+
+    <div class="modal" data-modal hidden aria-hidden="true" role="dialog" aria-labelledby="rules-title">
+      <div class="modal__backdrop" data-close-rules></div>
+      <div class="modal__panel">
+        <header class="modal__header">
+          <h2 class="modal__title" id="rules-title">Rules</h2>
+          <button class="modal__close" type="button" data-close-rules aria-label="Close rules">
+            <img src="/images/icon-close.svg" alt="" aria-hidden="true" />
+          </button>
+        </header>
+        <div class="modal__body">
+          <img src="/images/image-rules.svg" alt="Rules diagram" />
+        </div>
+      </div>
+    </div>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

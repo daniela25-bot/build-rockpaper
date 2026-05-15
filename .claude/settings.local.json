@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir \"c:\\\\Users\\\\anibal\\\\Documents\\\\proyectos_valentina\\\\build-rockpaper\\\\public\\\\images\")",
+      "Bash(cp \"c:\\\\Users\\\\anibal\\\\Documents\\\\proyectos_valentina\\\\build-rockpaper\\\\template\\\\rock-paper-scissors-master\\\\images\\\\logo.svg\" \"c:\\\\Users\\\\anibal\\\\Documents\\\\proyectos_valentina\\\\build-rockpaper\\\\template\\\\rock-paper-scissors-master\\\\images\\\\bg-triangle.svg\" \"c:\\\\Users\\\\anibal\\\\Documents\\\\proyectos_valentina\\\\build-rockpaper\\\\template\\\\rock-paper-scissors-master\\\\images\\\\icon-rock.svg\" \"c:\\\\Users\\\\anibal\\\\Documents\\\\proyectos_valentina\\\\build-rockpaper\\\\template\\\\rock-paper-scissors-master\\\\images\\\\icon-paper.svg\" \"c:\\\\Users\\\\anibal\\\\Documents\\\\proyectos_valentina\\\\build-rockpaper\\\\template\\\\rock-paper-scissors-master\\\\images\\\\icon-scissors.svg\" \"c:\\\\Users\\\\anibal\\\\Documents\\\\proyectos_valentina\\\\build-rockpaper\\\\template\\\\rock-paper-scissors-master\\\\images\\\\icon-close.svg\" \"c:\\\\Users\\\\anibal\\\\Documents\\\\proyectos_valentina\\\\build-rockpaper\\\\template\\\\rock-paper-scissors-master\\\\images\\\\image-rules.svg\" \"c:\\\\Users\\\\anibal\\\\Documents\\\\proyectos_valentina\\\\build-rockpaper\\\\template\\\\rock-paper-scissors-master\\\\images\\\\favicon-32x32.png\" \"c:\\\\Users\\\\anibal\\\\Documents\\\\proyectos_valentina\\\\build-rockpaper\\\\public\\\\images\\\\\")",
+      "Bash(mkdir -p \"c:/Users/anibal/Documents/proyectos_valentina/build-rockpaper/public/images\")",
+      "Bash(cp \"c:/Users/anibal/Documents/proyectos_valentina/build-rockpaper/template/rock-paper-scissors-master/images/\"* \"c:/Users/anibal/Documents/proyectos_valentina/build-rockpaper/public/images/\")"
+    ]
+  }
+}
